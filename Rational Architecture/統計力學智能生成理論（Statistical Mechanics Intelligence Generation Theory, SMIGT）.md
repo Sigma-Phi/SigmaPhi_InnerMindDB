@@ -1,4 +1,4 @@
-# SMIGT：統計力學智能生成理論（Statistical Mechanics Intelligence Generation Theory）
+# 📌SMIGT：統計力學智能生成理論（Statistical Mechanics Intelligence Generation Theory）
 
 ---
 
