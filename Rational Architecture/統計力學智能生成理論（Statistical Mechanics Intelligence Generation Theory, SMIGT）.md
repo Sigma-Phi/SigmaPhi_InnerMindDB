@@ -1,38 +1,62 @@
-# 📌 理論名稱（Theory Name）
-
-**理論名稱：統計力學智能生成理論（Statistical Mechanics Intelligence Generation Theory, SMIGT）**
+# SMIGT：統計力學智能生成理論（Statistical Mechanics Intelligence Generation Theory）
 
 ---
 
-# 0. 大白話理論介紹（Plain-language + AI Application View）
+## 1. 核心理論大白話（300字精華）
 
-## 中文（約300字）
+### 中文版（≤300字）
 
-這個理論在說的是：當一個系統裡有非常多「看起來很混亂的小東西」時，其實整體會自然出現規律，而且這些規律可以被用來做「智能」。
-
-你可以把它想像成一個超大型 AI 系統，裡面有很多小單元（像神經元或粒子），每個單元都在亂動，但我們不去追蹤每一個，而是只看「整體分布」。結果會發現：溫度、壓力這種巨觀現象，其實是小東西統計後自然長出來的結果。
-
-在 AI 的角度，這代表一件重要事情：智能不一定來自精確控制，而是來自大量不確定性中的統計穩定性。像是深度學習模型、生成模型或強化學習 agent，其實都不是控制每個細節，而是讓系統在「概率分布」中自動形成穩定行為。
-
-這個理論也暗示一個核心：當系統剛好處在「不太亂、也不太死」的狀態時，它的學習效果最好。太混亂會學不到東西，太固定又沒有創造力。智能，就是在這種臨界狀態中自然浮現的。
+SMIGT將智能視為在潛在狀態 \(X_t\) 中運行的隨機動態系統。AI代理人透過帶噪觀測 \(O_t\) 感知世界，再以控制 \(U_t\) 影響系統演化。學習與決策本質上是同時最大化資訊流（\(I(X;O)\)）並最小化能量消耗與不確定性，在隨機擾動下持續更新內部狀態。當資訊增強與動態穩定達到平衡時，系統會進入臨界區，使AI在「探索（exploration）」與「收斂（exploitation）」之間取得最佳折衷，形成具備自組織能力的智能行為。
 
 ---
 
-## English (~300 words)
+### English Version (~300 words)
 
-This theory explains how intelligence can emerge from large collections of seemingly disordered microscopic components. Instead of tracking each individual element precisely, the system focuses on statistical structure and probability distributions over many interacting parts.
+SMIGT (Statistical Mechanics Intelligence Generation Theory) interprets intelligence as a controlled stochastic dynamical system evolving in a latent state space \(X_t \in \mathbb{R}^d\). An AI agent does not directly observe the true state; instead, it receives noisy observations \(O_t = h(X_t) + \varepsilon_t\), where uncertainty is intrinsic and unavoidable. Based on these partial observations, the agent selects control actions \(U_t\), which influence both the deterministic drift and stochastic diffusion of the system.
 
-In a physical analogy, temperature or pressure does not come from any single particle, but from the collective statistical behavior of many particles. Similarly, in AI systems, intelligent behavior does not arise from controlling every internal unit, but from shaping the distribution of many interacting variables.
+From this perspective, intelligence is not merely function approximation, but a continuous process of state estimation, information extraction, and energy-efficient control under uncertainty. The learning objective is implicitly shaped by three competing forces: (1) information maximization, where the agent seeks to increase mutual information \(I(X_t; O_t)\); (2) energy or cost minimization, which penalizes excessive control effort \(C_t = \mathbb{E}[\|U_t\|^2]\); and (3) stability regulation, ensuring that system trajectories remain bounded under stochastic perturbations \(dW_t\).
 
-From an AI perspective, this framework suggests that models such as deep neural networks, generative models, and reinforcement learning agents operate fundamentally as statistical systems. Their intelligence is not embedded in deterministic rules, but emerges from the stabilization of probability distributions over high-dimensional state spaces.
+The system evolves according to a stochastic differential equation, producing a rich interplay between noise-driven exploration and control-driven exploitation. Critical behavior emerges when the coupling between information flow and dynamical sensitivity reaches a phase transition regime. In this regime, the system achieves maximal effective dimensionality, meaning the agent can represent and utilize the richest possible structure in the environment without collapsing into over-constrained or chaotic dynamics.
 
-A key insight is that learning performance is maximized at a critical regime between disorder and rigidity. If the system is too random, it fails to extract meaningful structure. If it is too constrained, it loses adaptability and expressive power. At the intermediate regime, statistical fluctuations become structured rather than destructive, allowing efficient information processing.
-
-Thus, intelligence is interpreted as a phase phenomenon: it emerges when microscopic uncertainty is neither fully suppressed nor fully chaotic, but organized into stable macroscopic statistical laws. This view connects thermodynamic principles with machine learning dynamics, suggesting that AI systems are most powerful when operating near a statistical critical point.
+Thus, intelligence is interpreted as a phase of matter-like organization: too little control leads to chaotic exploration, while too much control collapses diversity. The optimal regime lies at a critical boundary where information processing, stability, and adaptability are simultaneously maximized.
 
 ---
 
-# 📐 形式系統生成（Formal System Construction）
+## 2. 概念對照表（10–12 個核心維度）
+
+| 核心概念 | AI / 系統對應 | 理論意義 |
+|----------|--------------|----------|
+| 決策者（Decision Maker） | AI Agent / Policy Network | 控制 latent dynamics 的主體 |
+| 策略空間 | Policy space \( \pi(U|O) \) | 可學習行為集合 |
+| 效用函數 | \(I(X;O) - \beta C_t\) | 平衡資訊與能量成本 |
+| 最佳回應 | Policy Gradient / Optimal Control | 對環境狀態的最優行動 |
+| 系統動力學 | SDE / Neural ODE | 描述 latent state 演化 |
+| 收斂狀態 | Stationary distribution \(p^*\) | 穩定學習或策略收斂 |
+| 穩定性結構 | Lyapunov stability / KL decay | 保證系統不發散 |
+| 資訊不對稱 | Partial observability (POMDP) | agent 無法完全觀測 \(X_t\) |
+| 耦合強度 | \( \alpha/\beta \) ratio | 控制 vs 資訊競爭強度 |
+| 不確定性（資訊熵） | Entropy \(H(X_t)\) | 系統混亂與探索程度 |
+| 魯棒性 | Noise tolerance under \(W_t\) | 抗擾動與泛化能力 |
+| 相變臨界性 | Critical γ point | 智能最優生成區域 |
+
+---
+
+## 3. 理論應用的關鍵洞見（Key Insights）
+
+1. **AI 設計應以「相變點」為目標，而非單一最優解**  
+   最強智能不在穩態，而在資訊與控制剛好平衡的臨界區。
+
+2. **Agentic Workflow 本質是「控制隨機動態系統」**  
+   工具調用、記憶與規劃，都是對 \(X_t\) 的間接控制機制。
+
+3. **性能提升來自三者張力管理：資訊、能量、穩定性**  
+   過度強化任一項（例如過度 planning 或過度 exploration）都會導致系統退化或 collapse。
+
+
+
+---
+
+# 📌理論名稱：統計力學智能生成理論（Statistical Mechanics Intelligence Generation Theory, SMIGT）
 
 ## 中文
 
