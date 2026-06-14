@@ -1,4 +1,4 @@
-# 關係動力智能理論（RDIT）→ AI 系統開發與應用分析架構
+# 📌關係動力智能理論（RDIT）→ AI 系統開發與應用分析架構
 
 ---
 
@@ -62,7 +62,7 @@ Thus, AI systems inspired by RDIT should be designed as adaptive, self-reconfigu
 
 # 📌 理論名稱（Theory Name）
 
-📌關係動力智能理論（Relational Dynamics Intelligence Theory, RDIT）
+# 📌關係動力智能理論（Relational Dynamics Intelligence Theory, RDIT）
 
 ---
 
