@@ -1,4 +1,4 @@
-# 內在流形微分幾何生成系統（IGMDT）→ AI 系統與 Agentic Architecture 框架
+# 🧠內在流形微分幾何生成系統（IGMDT）→ AI 系統與 Agentic Architecture 框架
 
 ---
 
