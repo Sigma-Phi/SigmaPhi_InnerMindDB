@@ -1,4 +1,4 @@
-# 生成—回返張力動力學（Generative–Recurrent Tension Dynamics, GRTD）→ AI 系統開發與應用分析架構
+# 👉生成—回返張力動力學（Generative–Recurrent Tension Dynamics, GRTD）→ AI 系統開發與應用分析架構
 
 ---
 
