@@ -45,10 +45,14 @@ Optimal learning occurs at a critical boundary where \(\Gamma_t \approx 1\), rep
 第二，資訊效率應作為比 reward 更高層的控制目標。在 CFLP 架構中，真正的 learning signal 不是單純 reward，而是 \(I_t/E_t\) 的最優化，這使 agent 能在多任務與不確定環境中保持泛化能力。
 
 第三，Agentic Workflow 應被設計為「可調控相變系統」。透過動態調整 constraint strength（如 safety layer、alignment、regularization），系統可在穩定與創造性之間切換，形成具備自組織能力的 multi-agent intelligence。
+
+
 ---
 # 🧠 受限自由學習悖論（CFLP）
 ### Formal System Generator for Constrained Freedom Learning Paradox (CFLP)
 ---
+
+
 ## 1. 形式系統生成（Formal System Construction）
 ### 中文
 定義受限自由智能系統，其狀態空間、觀測方程與受限控制項在擴散噪聲下的隨機微分方程如下：
