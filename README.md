@@ -1,5 +1,5 @@
 # 🧠 Σ 互斥实验室 (Antagonism Lab ΣΦ)
-Node ID：f4d9c8a1b2e30764  
+Node ID：f4d9c8a1b2e30764 
 Core Operator ID：Σ-Ω₀（Self-Observation Operator）
 ---
 📦 MD-0｜核心概念层
