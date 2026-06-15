@@ -66,7 +66,7 @@ reward function 不再是解題成功率，而是系統在固定 constraint fiel
 ---
 📌 理論名稱（Theory Name）
 
-📌# Absolute Coexistence State Theory (ACST)  
+# 📌Absolute Coexistence State Theory (ACST)  
 （絕對狀態共存理論）
 
 ---
