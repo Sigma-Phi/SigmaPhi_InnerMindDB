@@ -48,7 +48,7 @@ Optimal learning occurs at a critical boundary where \(\Gamma_t \approx 1\), rep
 
 
 ---
-##理論名稱:
+## 理論名稱:
 # 🧠 受限自由學習悖論（CFLP）
 ### Formal System Generator for Constrained Freedom Learning Paradox (CFLP)
 ---
