@@ -1,4 +1,4 @@
-# 📌 心智場連續漂移論 → AI系統開發轉譯架構  
+# 🧠 心智場連續漂移論 → AI系統開發轉譯架構  
 （Continuum Drift of Mind Fields → AI System Architecture Translation）
 
 ---
