@@ -105,7 +105,7 @@ AI agent 的核心不再是提升 reward，而是：
 ---
 
 
-# 📌 Σ-Φ 因果核邊界約束理論（強化物理化版本）
+# 📌 Σ-Φ 因果核邊界約束理論
 ## (Σ-Φ Causal Kernel Boundary Constraint Theory)
 
 ---
