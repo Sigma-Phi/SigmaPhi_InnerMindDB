@@ -1,4 +1,4 @@
-# 對稱生成動力系統論（Symmetry-Generated Dynamical Systems Theory）
+# 📌對稱生成動力系統論（Symmetry-Generated Dynamical Systems Theory）
 ## AI / Agentic System 分析架構轉換版
 
 ---
@@ -107,7 +107,7 @@ Thus, intelligence is fundamentally the ability to preserve structure under cont
 AI agent 不是在「計算答案」，而是在「維持一個能持續運作的動態對稱結構」。
 
 ---
-# 理論名稱:對稱生成動力系統論
+# 📌理論名稱:對稱生成動力系統論
 ## Symmetry-Generated Dynamical Systems Theory
 
 ---
